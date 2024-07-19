@@ -72,5 +72,9 @@ Follow these steps to set up the project on your local machine.
 
 ## File Structure
 
-node submit_obituary.js
-node view_obituary.js
+## node submit_obituary.js
+starts the submitting server
+
+
+## node view_obituary.js
+starts the viewing server
