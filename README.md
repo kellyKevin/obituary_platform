@@ -72,4 +72,5 @@ Follow these steps to set up the project on your local machine.
 
 ## File Structure
 
-
+node submit_obituary.js
+node view_obituary.js
