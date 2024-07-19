@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= obituary.name %> Obituary</title>
+    <meta name="description" content="Obituary for <%= obituary.name %>, born on <%= obituary.date_of_birth %> and passed away on <%= obituary.date_of_death %>.">
+    <meta name="keywords" content="<%= obituary.name %>, obituary, memorial">
+    <meta property="og:title" content="<%= obituary.name %> Obituary">
+    <meta property="og:description" content="Obituary for <%= obituary.name %>, born on <%= obituary.date_of_birth %> and passed away on <%= obituary.date_of_death %>.">
+    <meta property="og:image" content="/path/to/image.jpg">
+    <meta property="og:url" content="http://localhost:3000/obituary/<%= obituary.slug %>">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="http://localhost:3000/obituary/<%= obituary.slug %>">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/social_share.js" defer></script>
+</head>
+<body>
+    <h1><%= obituary.name %></h1>
+    <p>Date of Birth: <%= obituary.date_of_birth %></p>
+    <p>Date of Death: <%= obituary.date_of_death %></p>
+    <p><%= obituary.content %></p>
+    <p>Author: <%= obituary.author %></p>
+    <p>Submitted on: <%= obituary.submission_date %></p>
+
+    <!-- Social Media Share Buttons -->
+    <div class="social-share">
+        <button id="share-twitter">Share on Twitter</button>
+        <button id="share-facebook">Share on Facebook</button>
+        <button id="share-linkedin">Share on LinkedIn</button>
+        <button id="copy-url">Copy URL</button>
+    </div>
+</body>
+</html>

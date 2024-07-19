@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Obituary</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/validate.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Submit an Obituary</h1>
+        <nav>
+            <a href="/view_obituaries">View Obituaries</a>
+        </nav>
+    </header>
+    <main>
+        <form action="/submit_obituary" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="date_of_birth">Date of Birth:</label>
+            <input type="date" id="date_of_birth" name="date_of_birth" required>
+            
+            <label for="date_of_death">Date of Death:</label>
+            <input type="date" id="date_of_death" name="date_of_death" required>
+            
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" required></textarea>
+            
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+            
+            <button type="submit">Submit Obituary</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Obituary Platform</p>
+    </footer>
+</body>
+</html>
